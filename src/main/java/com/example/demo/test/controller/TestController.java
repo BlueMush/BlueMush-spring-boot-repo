@@ -7,6 +7,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class TestController {
     @GetMapping("/api/home")
     public String getHome(){
-        return "git 연동 test";
+        return "sts git test";
     }
 }
