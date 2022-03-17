@@ -30,11 +30,11 @@ public class TestController {
 		return testService.findByAnimalId(id);
 	}
 
-	// �������
+	// 占쏙옙占쏙옙占쏙옙占�
 	@GetMapping("/api/animal")
 	public TestEntity findByanimalName(
 			@RequestParam(required = true) String name) {
-		// �������
+		// 占쏙옙占쏙옙占쏙옙占�
 		// log.info("Find by animal name [{}]", name);
 
 		return testService.findByAnimalName(name);
