@@ -37,13 +37,13 @@ public class GsonPractice {
 		String gsonTdoJsonString = gson.toJson(test);
 		log.info("Json String : [ {} ]", gsonTdoJsonString);
 		
-		Test2 test2 = gson.fromJson(jsonStringWithObjects, Test2.class);
-		log.info("Gson Object : [ {} ]", test2);
+		ParentJson parentJson = gson.fromJson(jsonStringWithObjects, ParentJson.class);
+		log.info("Gson Object : [ {} ]", parentJson);
 		
-		String gsonToJsonString = gson.toJson(test2);
+		String gsonToJsonString = gson.toJson(parentJson);
 		log.info("Json String : [ {} ]", gsonToJsonString);
 
 		//Test(name=testname, testList=[item01, item02, item03], value=123, isTest=true)
-		//ToString 쓰면 이렇게나와야됨 ㅇㅋ?
+		//ToString 쓰면 이렇y게나와야됨 ㅇㅋ?
 	}
 }

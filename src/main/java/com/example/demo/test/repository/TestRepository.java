@@ -11,16 +11,11 @@ import com.example.demo.test.model.TestEntity;
 public interface TestRepository extends JpaRepository<TestEntity, Long> {
 	
 	/**
-	 * ID °Ë»ö
+	 * ID ï¿½Ë»ï¿½
 	 * @param id
 	 * @return
 	 */
 	public Optional<TestEntity> findByAnimalId(Long id);
 
 	public Optional<TestEntity> findByAnimalName(String name);
-	
-	
-	/**
-	 * ¼÷Á¦(¾ÈÇÏ¸é ±¸Çö¸ð »ç¸Á) : nameÀ¸·Î ÀÏÄ¡ÇÏ´Â Ç×¸ñ °Ë»ö
-	 */
 }
